@@ -45,13 +45,9 @@ namespace app {
 		// Show/hide rows based on bitmap/vector image output
 		const bitmapOutput: boolean = getInput("output-format-bitmap").checked;
 		const scaleRow : HTMLElement = getElem("scale-row");
-		let download = getElem("download") as HTMLAnchorElement;
 		scaleRow.hidden = !bitmapOutput;
-		if (bitmapOutput) {
-			download.download = "qr-code.png";
-		} else {
-			download.download = "qr-code.svg";
-		}
+		let download = getElem("download") as HTMLAnchorElement;
+		download.download = "qr-code." + (bitmapOutput ? "png" : "svg");
 		download.removeAttribute("href");
 		
 		// Reset output images in case of early termination

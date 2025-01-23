@@ -6,8 +6,33 @@ Introduction
 ------------
 
 This project aims to be the best, clearest QR Code generator library. The primary goals are flexible options and absolute correctness. Secondary goals are compact implementation size and good documentation comments.
+By [Nayuki](https://github.com/nayuki).
 
 Home page with live JavaScript demo, extensive descriptions, and competitor comparisons: https://www.nayuki.io/page/qr-code-generator-library
+
+
+Installation
+------------
+
+Run:
+```bash
+$ npm i qr-code-generator.c
+```
+
+And then include `qrcodegen.h` as follows:
+```c
+#include "node_modules/qr-code-generator.c/c/qrcodegen.h"
+```
+
+You may also want to include `qrcodegen.c` as follows:
+```c
+#ifndef __QRCODEGEN_C__
+#define __QRCODEGEN_C__
+#include "node_modules/qr-code-generator.c/c/qrcodegen.c"
+#endif
+```
+
+This will include both the function declaration and their definitions into a single file.
 
 
 Features
@@ -68,3 +93,10 @@ ok = qrcodegen_encodeBinary(dataAndTemp, 3, qr1,
 ```
 
 More complete set of examples: https://github.com/nayuki/QR-Code-generator/blob/master/c/qrcodegen-demo.c .
+
+<br>
+<br>
+
+
+[![ORG](https://img.shields.io/badge/org-nodef-green?logo=Org)](https://nodef.github.io)
+![](https://ga-beacon.deno.dev/G-RC63DPBH3P:SH3Eq-NoQ9mwgYeHWxu7cw/github.com/nodef/qr-code-generator.c)

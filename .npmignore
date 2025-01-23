@@ -1,0 +1,10 @@
+cpp/
+java/
+java-fast/
+python/
+rust/
+rust-no-heap/
+typescript-javascript/
+npm.sh
+*.log
+*.markdown.log
